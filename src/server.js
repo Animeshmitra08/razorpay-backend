@@ -39,6 +39,10 @@ app.post("/create-order", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("API is running");
+});
+
 /* ---------------- VERIFY PAYMENT ---------------- */
 
 app.post("/verify-payment", (req, res) => {
